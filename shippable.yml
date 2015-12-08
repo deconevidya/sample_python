@@ -25,3 +25,5 @@ script:
 notifications:
   email:
    - exampleone@org.com
+
+archive: true
