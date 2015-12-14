@@ -1,8 +1,9 @@
 language: python
-build_image: drydock/u14pytpls:prod 
+#build_image: drydock/u14pytpls:prod 
 #build_image: shippableimages/ubuntu1204_python
 python:
   - 3.2
+  - 3.4
   
 
 install:
