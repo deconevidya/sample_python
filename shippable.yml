@@ -1,6 +1,6 @@
 language: python
-build_image: drydock/u14pytpls:prod 
-build_image: drydock/u14pyt:ci
+build_image: drydock/u14pytpls:tip
+#build_image: drydock/u14pyt:ci
 #build_image: shippableimages/ubuntu1204_python
 python:
   - 2.6
@@ -9,6 +9,7 @@ python:
   - 3.3
   - 3.4
   - pypy
+  - pypy3
 
 install:
   - pip install -r requirements.txt
@@ -23,8 +24,5 @@ script:
   - coverage run `which nosetests` test.py --with-xunit --xunit-file=shippable/testresults/nosetests.xml
   - coverage xml -o shippable/codecoverage/coverage.xml
 
-notifications:
-  email:
-   - exampleone@org.com
 
 archive: true
