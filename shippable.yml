@@ -1,5 +1,6 @@
 language: python
-#build_image: drydock/u14pytpls:prod 
+
+build_image: drydock/u12pyt:ci 
 #build_image: shippableimages/ubuntu1204_python
 
 python:
